@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de inclusão de noticias</h1>
+    <table>
+        <tr>
+            <td>ID</td>
+            <td>Título</td>
+            <td>Notícia</td>
+        </tr>
+        <% for (var i=0; i<noticias.length; i++){ %> <!--laço de repetição para mapear o banco de dados-->
+        <tr>
+            <td><%=noticias[i].id_noticia %></td> <!--colocar o id da noticia nesse lugar da tabela-->
+            <td><%=noticias[i].titulo %></td> <!--colocar o titulo da noticia nesse lugar da tabela-->
+            <td><%=noticias[i].noticia %></td> <!--colocar o noticia da noticia nesse lugar da tabela-->
+        </tr>
+        <% }%>
+</table>
+</body>
+</html>
